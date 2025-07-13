@@ -23,15 +23,15 @@ chunkArray([], 3);
 
 function chunkArray(arr, n) {
     // Your implementation
-    let chucked = [];
+    let chunked = [];
     for (let i = 0; i < arr.length; i += n){
-        chucked.push(arr.slice(i, i+n));
+        chunked.push(arr.slice(i, i+n));
     }
-    return chucked;
+    return chunked;
 
 }
 
 //For the purpose of user debugging.
 //pass your array and chunk size in function call
-chunkArray([1, 2, 3], 5);
+
 module.exports = chunkArray
